@@ -34,15 +34,21 @@ public class Registration {
     @FindBy (xpath = "//*[@id=\"color\"]/div/div[1]/div[2]")
     WebElement viewEducationStatusButton;
 
-    @FindBy (xpath = "//*[@id=\"navbarSupportedContent1\"]/div/ul/li[2]/div/a[1]")
-    WebElement participantButton;
+    @FindBy (xpath = "//*[@id=\"color\"]/div/div[1]/div[1]")
+    WebElement selectEducationStatus;
 
-    @FindBy (xpath = "//*[@id=\"navbarSupportedContent1\"]/div/ul/li[2]/div/a[1]")
-    WebElement participantButton;
+    @FindBy (xpath = "//*[@id=\"root\"]/div/div/div/div/div[1]/div/div/div[2]/form/div[7]/input")
+    WebElement passwordField;
 
-    @FindBy (xpath = "//*[@id=\"navbarSupportedContent1\"]/div/ul/li[2]/div/a[1]")
-    WebElement participantButton;
+    @FindBy (xpath = "//*[@id=\"root\"]/div/div/div/div/div[1]/div/div/div[2]/form/div[9]/input")
+    WebElement confirmPasswordField;
 
-    @FindBy (xpath = "//*[@id=\"navbarSupportedContent1\"]/div/ul/li[2]/div/a[1]")
-    WebElement participantButton;
+    @FindBy (xpath = "//*[@id=\"root\"]/div/div/div/div/div[1]/div/div/div[2]/form/div[10]/button")
+    WebElement registerSubmitButton;
+
+    public void registration(){
+        joinButton.click();
+        participantButton.click();
+
+    }
 }
