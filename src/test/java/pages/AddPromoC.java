@@ -10,7 +10,6 @@ public class AddPromoC {
 
     public void addCoupon(){
 
-        driver.get("https://careerhub-frontend.bracits.com/");
 
     }
 }
