@@ -2,7 +2,6 @@ package setup;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.*;
 import org.testng.annotations.BeforeTest;
-//import org.junit.*;
 
 public class Setup {
 
