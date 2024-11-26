@@ -12,7 +12,7 @@ public class Setup {
 
         ChromeOptions ops = new ChromeOptions();
         ops.addArguments("--headed");
-        System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver");
+        System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver.exe");
         driver = new ChromeDriver();
         driver.manage().window().maximize();
         Thread.sleep(5000);
