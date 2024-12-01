@@ -1,5 +1,4 @@
 package Test;
-import net.bytebuddy.build.Plugin;
 import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.BeforeTest;
@@ -11,13 +10,13 @@ import setup.Setup;
 public class CreateSlotTestRunner extends Setup {
     Login objLogin;
 
-    @BeforeTest
+    /*@BeforeTest
     public void visitUrl(){
         driver.get("https://careerhub-frontend.bracits.com/");
-    }
+    }*/
 
     @Test
-    public void doLogin(){
+    public void doLogin() throws InterruptedException {
         objLogin = new Login();
 
         objLogin.login("sdp_c", "123456");
