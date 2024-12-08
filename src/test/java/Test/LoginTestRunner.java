@@ -9,12 +9,13 @@ import org.testng.annotations.Test;
 import pages.*;
 import setup.Setup;
 
+import java.time.Instant;
 
-public class CreateSlotTestRunner extends Setup {
+public class LoginTestRunner extends Setup {
 
-    Login objLogin;
+    Login objLogin = new Login(driver);;
 
-   @BeforeTest
+   /* @BeforeTest
     public void visitUrl() throws InterruptedException {
         driver.get("https://careerhub-frontend.bracits.com/login");
         objLogin = new Login(driver);
@@ -27,11 +28,11 @@ public class CreateSlotTestRunner extends Setup {
             closePopUp.click();
         } catch (TimeoutException e) {
             System.out.println("Pop-up not displayed. Proceeding with test.");
-        }*/
+        }
 
-    }
+    }*/
 
-   @Test
+    @Test
     public void doLogin() throws InterruptedException {
 
         String pageHeader = objLogin.login("sdp_c", "123456");

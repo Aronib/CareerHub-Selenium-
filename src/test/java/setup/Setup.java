@@ -23,16 +23,14 @@ public class Setup {
         driver.manage().window().maximize();
         Thread.sleep(5000);
 
-        //@FindBy(xpath = "/html/body/div[8]/div/div[2]/div/div[2]/div/div/button")
-        //WebElement closePopUP;
-        driver.get("https://careerhub-frontend.bracits.com/");
+        driver.get("https://careerhub-frontend.bracits.com/login");
         PageFactory.initElements(driver, this);
 
         try {
             // Wait for the pop-up and close it if present
             WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
             WebElement closePopUp = wait.until(ExpectedConditions.elementToBeClickable(
-                    By.xpath("/html/body/div[8]/div/div[2]/div/div[2]/div/div/button")
+                    By.xpath("/html/body/div[2]/div/div[2]/div/div[2]/div/div/button/i")
             ));
             closePopUp.click();
         } catch (TimeoutException e) {
